@@ -112,3 +112,12 @@ C:\Users\Mandla\source\repos\Leave Management\obj\Debug\Leave Management.xml
 C:\Users\Mandla\source\repos\Leave Management\obj\Debug\Leave Management.pdb
 C:\Users\Mandla\source\repos\Leave Management\obj\Debug\Leave_Management.Migrations.InitialCreate.resources
 C:\Users\Mandla\source\repos\Leave Management\obj\Debug\Leave_Management.Migrations.InitialCreate1.resources
+C:\Users\Mandla\Desktop\leave-management-system\obj\Debug\Leave Management.vbproj.AssemblyReference.cache
+C:\Users\Mandla\Desktop\leave-management-system\obj\Debug\Leave_Management.Migrations.InitialCreate.resources
+C:\Users\Mandla\Desktop\leave-management-system\obj\Debug\Leave_Management.Migrations.InitialCreate1.resources
+C:\Users\Mandla\Desktop\leave-management-system\obj\Debug\Leave_Management.Resources.resources
+C:\Users\Mandla\Desktop\leave-management-system\obj\Debug\Leave Management.vbproj.GenerateResource.cache
+C:\Users\Mandla\Desktop\leave-management-system\obj\Debug\Leave Management.vbproj.CoreCompileInputs.cache
+C:\Users\Mandla\Desktop\leave-management-system\obj\Debug\Leave Management.dll
+C:\Users\Mandla\Desktop\leave-management-system\obj\Debug\Leave Management.xml
+C:\Users\Mandla\Desktop\leave-management-system\obj\Debug\Leave Management.pdb

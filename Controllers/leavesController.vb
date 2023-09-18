@@ -21,10 +21,10 @@ Namespace Controllers
                 ' Check if the currently logged-in user is in the "Admin" role
                 If User.IsInRole("Admin") Then
                     ' Admins can view all leave requests
-                    From l In db.leaves
-                    Group Join s In db.leavestatus On l.leave_id Equals s.leave_id Into statusGroup = Group
-                    From statusRecord In statusGroup.DefaultIfEmpty()
-                    Select New LeaveStatusViewModel With {
+                    Dim allLeavesWithStatus = (From l In db.leaves
+                                               Group Join s In db.leavestatus On l.leave_id Equals s.leave_id Into statusGroup = Group
+                                               From statusRecord In statusGroup.DefaultIfEmpty()
+                                               Select New LeaveStatusViewModel With {
                     .LeaveID = l.leave_id,
                     .Reason = l.reason,
                     .StartDate = l.start_date,

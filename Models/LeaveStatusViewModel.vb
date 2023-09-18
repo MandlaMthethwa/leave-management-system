@@ -5,5 +5,7 @@
     Public Property EndDate As DateTime
     Public Property StatusName As String
     Public Property Comment As String
+    Public Property UserID As String
+
 End Class
 
