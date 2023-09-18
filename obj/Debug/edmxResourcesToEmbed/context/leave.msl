@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="leaveModelStoreContainer" CdmEntityContainer="leaveEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="leaveModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="leaveModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="leaveModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="leaveModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="leaveModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="leaves">
+      <EntityTypeMapping TypeName="leaveModel.leave">
+        <MappingFragment StoreEntitySet="leave">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="leave_id" ColumnName="leave_id" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="leavestatus">
+      <EntityTypeMapping TypeName="leaveModel.leavestatu">
+        <MappingFragment StoreEntitySet="leavestatus">
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="status_name" ColumnName="status_name" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="leave_id" ColumnName="leave_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="leaveModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
