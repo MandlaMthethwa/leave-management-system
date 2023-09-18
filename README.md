@@ -5,7 +5,6 @@
 ## Create userRoles or alternatively
 
 ## Use the default user admin 
-### email :admin@leavemanagement.com
-### password :Admin123@LeaveMangement
+
 
 
